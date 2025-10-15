@@ -19,8 +19,6 @@
 
 # GPT-from-Scratch: Implementation and Pretraining Analysis
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-
 This repository contains a complete implementation of a GPT-2 (124M) style model from scratch using PyTorch. The project includes optimized training code and a detailed analysis of how the model's generative capabilities evolve throughout the pretraining process.
 
 ## Key Features
