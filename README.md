@@ -1,17 +1,33 @@
-# GPT2 (124M)
-### Key points
-- Completed: The model has been implemented and pretrained using 10B Tokens from fineweb-edu.
-- Main reference: https://www.youtube.com/watch?v=l8pRSuU81PU&t=2760s
+# GPT-from-Scratch: Implementation and Pretraining Analysis
 
-### Releases
-#### pretrained_custom_gpt2_124M
-- model_19072.pt: Contains the pretrained model 
+This repository contains a complete implementation of a GPT-2 (124M) style model from scratch using PyTorch. The project includes optimized training code and a detailed analysis of how the model's generative capabilities evolve throughout the pretraining process.
 
-### Files
-- train_gpt2.py: GPT2 implementation and training/validation loop.
-- Every single important implementation detail is explained in the code as comments.
-- GPT2 (124M) - Andrej Karapathy.pdf: Contains a) a general overview of the project, b) my notes, c) an analysis of how text generated changes with time and d) how prompting affects text generated
-- Pretraining model outputs.csv: Contain the model ouptuts recorded throughout pretraining. The first column highlights the training step and the second column indicates the sample number within that training step.
-- outputs.csv: Model outputs after pretraining.
-- log.txt: Contains the change in training loss, validation loss and hellaswag accuracy score with training steps.
+## Key Features
 
+*   **GPT-2 Architecture from Scratch:** A clean and well-commented implementation of the GPT-2 (124M) model, including multi-head self-attention, layer normalization, and GELU activations.
+*   **Optimized Training:** The training script incorporates modern optimizations such as **BF16 mixed-precision** for faster training and **fused AdamW optimizers**.
+*   **Pretraining Analysis:** A Jupyter Notebook that tracks the model's responses to a fixed prompt at various stages of training, providing a clear visualization of the learning progression.
+*   **Inference Script:** A simple script to load a trained checkpoint and generate text.
+
+## Analysis: The Evolution of a Greeting
+
+One of the key goals of this project was to observe the qualitative progression of the model's learning. By feeding the same prompt ("Hello,") to the model at different training checkpoints, we can see it evolve from generating gibberish to forming coherent sentences.
+
+]
+
+## Important files
+**[View the Final Report (PDF)](https://lakindu2003.github.io/hk-gmb-fare-equity/capstone_final_report.pdf)**
+*   [`train_gpt2.py`](https://lakindu2003.github.io/gpt2-from-scratch/train_gpt2.py): Implementation and training code of GPT2 from scratch with detailed documentation and personal comments.
+*   [`project_report_unedited.pdf`](https://lakindu2003.github.io/gpt2-from-scratch/project_report_unedited.pdf): Unedited full project report.
+*   [`pretraining_model_outputs.csv`](https://lakindu2003.github.io/gpt2-from-scratch/pretraining_model_outputs.csv): Model outputs recorded across pretraining.
+*   [`outputs.csv`](https://lakindu2003.github.io/gpt2-from-scratch/outputs.csv): Model outputs.
+*   [`log.txt`](https://lakindu2003.github.io/gpt2-from-scratch/log.txt): Pretraining evaluation log with train and validation losses.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## References
+1. https://www.youtube.com/watch?v=l8pRSuU81PU&t=2760s
+2. https://github.com/karpathy/build-nanogpt/tree/master
+3. https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+4. https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
