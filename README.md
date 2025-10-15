@@ -16,7 +16,6 @@ One of the key goals of this project was to observe the qualitative progression 
 ]
 
 ## Important files
-**[View the Final Report (PDF)](https://lakindu2003.github.io/hk-gmb-fare-equity/capstone_final_report.pdf)**
 *   [`train_gpt2.py`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/train_gpt2.py): Implementation and training code of GPT2 from scratch with detailed documentation and personal comments.
 *   [`project_report_unedited.pdf`](https://lakindu2003.github.io/gpt2-from-scratch/project_report_unedited.pdf): Unedited full project report.
 *   [`pretraining_model_outputs.csv`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/pretraining_model_outputs.csv): Model outputs recorded across pretraining.
