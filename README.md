@@ -35,7 +35,7 @@ Additionally, GPT's GELU activation function was replaced with a SiLU activation
 7. At 8000 steps, the text generated is more related to “language”, despite not being related to “language model”. The model has also learnt that there are “programming languages". This is shown by words such as “python” and “syntax”.
 8. Over the next steps, the text becomes more and more coherent and related to the prompt.
 
-A more detailed documentation with images can be found in the project report.
+A more detailed documentation with images can be found in section 8 (pp. 34-37) of the project report.
 
 ## Important files
 *   [`train_gpt2.py`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/train_gpt2.py): Implementation and training code of GPT2 from scratch with detailed documentation and personal comments.
