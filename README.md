@@ -2,8 +2,16 @@
 
 This repository contains a complete implementation of a GPT-2 (124M) style model from scratch using PyTorch. The report project includes optimized training code and a detailed analysis of how the model's generative capabilities evolve throughout the pretraining process.
 
+
+## Key Files
+*   [`train_gpt2.py`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/train_gpt2.py): Implementation and training code of GPT2 from scratch with detailed documentation and personal comments.
+*   [`project_report_unedited.pdf`](https://lakindu2003.github.io/gpt2-from-scratch/project_report_unedited.pdf): Unedited full project report.
+*   [`pretraining_model_outputs.csv`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/pretraining_model_outputs.csv): Model outputs recorded across pretraining.
+*   [`outputs.csv`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/outputs.csv): Model outputs.
+*   [`log.txt`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/log.txt): Pretraining evaluation log with train and validation losses.
+
 ## Datasets
-This project uses the FineWeb-edu 10B Tokens dataset, a higher-quality subset of the FineWeb dataset which focuses on educational content.
+This project used the FineWeb-edu 10B Tokens dataset, a higher-quality subset of the FineWeb dataset which focuses on educational content.
 
 ## Training Optimisations
 Several training optimisations were adopted from the GPT3 paper. This includes:
@@ -24,6 +32,8 @@ Additionally, GPT's GELU activation function was replaced with a SiLU activation
 1. Validation loss logging
 2. HellaSwag (multiple choice sentence completion evaluation dataset)
 
+![evaluation_curves](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/assets/eval_curves.png)
+
 ## The Evolution of how the model's outputs changed across pretraining for a greeting prompt
 **Prompt: "Hello, I'm a language model,"**
 1. At step 20, the model learned to predict frequently occurring  words such as “the”, “that”, and “is”.
@@ -37,12 +47,6 @@ Additionally, GPT's GELU activation function was replaced with a SiLU activation
 
 A more detailed documentation with images can be found in section 8 (pp. 34-37) of the project report.
 
-## Important files
-*   [`train_gpt2.py`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/train_gpt2.py): Implementation and training code of GPT2 from scratch with detailed documentation and personal comments.
-*   [`project_report_unedited.pdf`](https://lakindu2003.github.io/gpt2-from-scratch/project_report_unedited.pdf): Unedited full project report.
-*   [`pretraining_model_outputs.csv`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/pretraining_model_outputs.csv): Model outputs recorded across pretraining.
-*   [`outputs.csv`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/outputs.csv): Model outputs.
-*   [`log.txt`](https://github.com/Lakindu2003/gpt2-from-scratch/blob/main/log.txt): Pretraining evaluation log with train and validation losses.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
